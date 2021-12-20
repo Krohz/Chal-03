@@ -1,0 +1,164 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5rem;
+    line-height: 2;
+    /*Intelineado siempre aplicar a mis proyector junto al font siz*/
+}
+
+h1,
+h2,
+h3,
+h4{
+    font-family: "Lexend Deca", "Big Shoulders Display",serif;
+    margin: 0;
+}
+h2{
+    color: white;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: "Big Shoulders Display",serif;
+}
+
+@media (min-width: 768px) {
+    h2{
+        font-size:4.2rem
+    }
+}
+
+p{
+    margin: 0;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+.contenedor{
+    max-width: 300px;
+    min-width: 300px;
+    width: 90%;
+    margin: 10rem auto;
+}
+
+@media (min-width: 768px) {
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        max-width: 1000px;
+        width: 100%;
+    }
+}
+
+.sedan{
+    background-color: hsl(31, 77%, 52%);
+    height: 45rem;
+    max-height: 50rem;
+    padding: 5rem;
+    border: 1px solid transparent;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+@media (min-width: 768px) {
+    .sedan{
+        height: 60rem;
+        max-height: 65rem;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        border-top-right-radius: 0rem;
+        width: 35rem;
+    }
+}
+
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+    height: 45rem;
+    max-height: 50rem;
+    padding: 5rem;
+}
+
+@media (min-width: 768px) {
+    .suvs{
+        height: 60rem;
+        max-height: 65rem;
+        width: 35rem;
+    }
+}
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    height: 45rem;
+    max-height: 50rem;
+    padding: 5rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+@media (min-width: 768px) {
+    .luxury{
+        height: 60rem;
+        max-height: 65rem;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 0rem;
+        width: 35rem;
+    }
+}
+
+.btn{
+    background-color: white;
+    color:hsl(31, 77%, 52%); 
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid transparent;
+    border-radius: 3.5rem;
+    text-align: center;
+    width: 15rem;
+}
+
+@media (min-width: 768px) {
+    .btn{
+        margin-top: 15rem;
+    }
+}
+
+.btn:hover{
+    background-color: hsl(31, 77%, 52%); 
+    color: white;
+    border:1px solid white
+}
+
+.color-2{
+    color: hsl(184, 100%, 22%);
+}
+
+.color-2:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+    border:1px solid white
+}
+
+.color-3{
+    color: hsl(179, 100%, 13%);
+}
+
+.color-3:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+    border:1px solid white
+}
